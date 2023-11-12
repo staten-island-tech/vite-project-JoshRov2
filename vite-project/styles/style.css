@@ -29,6 +29,12 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  background-color: white;
+}
+
+body.dark {
+  background-color: darkgray;
+  color: red;
 }
 
 h1 {
