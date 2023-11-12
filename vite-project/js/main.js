@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import '../styles/style.css'
 /* import javascriptLogo from './javascript.svg'
 import viteLogo from '/vite.svg'
@@ -309,3 +310,8 @@ toggleButton.addEventListener('click', () => {
     toggleButton.textContent = "Change to dark mode."
   }
 })
+=======
+import "../css/style.css";
+import {Menu, Name} from "./menu";
+console.log(Menu, Name);
+>>>>>>> 68db9c95e9a004123b56913bfb744da1918c3ce8
