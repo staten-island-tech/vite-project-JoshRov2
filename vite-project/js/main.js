@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import '../styles/style.css'
 /* import javascriptLogo from './javascript.svg'
 import viteLogo from '/vite.svg'
@@ -275,18 +274,6 @@ const toyStoreInventory = [
 
 console.log(toyStoreInventory);
 
-/* const flexCard = document.createElement('div');
-    flexCard.classList.add('flex-card');
-    const image = document.createElement('img');
-    image.src = imageUrl;
-    const flexCardContent = document.createElement('div');
-    flexCardContent.classList.add('flex-card-content');
-    flexCardContent.innerHTML = `<p><strong>Manufacturer:</strong> ${manufacturer}</p>
-    <p><strong>Model:</strong> ${model}</p>`;
-    flexCard.appendChild(image);
-    flexCard.appendChild(flexCardContent);
-    DOMSelectors.flexCards.appendChild(flexCard); */
-
 function createToyCard(toy){
   const toyCard = document.createElement('div');
   toyCard.classList.add('toy-card');
@@ -310,8 +297,3 @@ toggleButton.addEventListener('click', () => {
     toggleButton.textContent = "Change to dark mode."
   }
 })
-=======
-import "../css/style.css";
-import {Menu, Name} from "./menu";
-console.log(Menu, Name);
->>>>>>> 68db9c95e9a004123b56913bfb744da1918c3ce8
