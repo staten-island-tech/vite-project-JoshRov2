@@ -28,7 +28,7 @@ const toggleButton = document.getElementById("toggle-mode");
 const toyApp = document.getElementById('app');
 const toyStoreInventory = [
   {
-    name: "LEGO Classic Bricks Set",
+    name: "LEGO Classic Brick Set",
     price: 29.99,
     ageGroup: "6+",
     rating: 4.5,
@@ -261,15 +261,7 @@ const toyStoreInventory = [
     brand: "Funko",
     category: "Collectibles"
   },
-  {
-    name: "VTech Go! Go! Smart Wheels Ultimate RC Speedway",
-    price: 59.99,
-    ageGroup: "1-5 years",
-    rating: 4.6,
-    description: "An interactive RC raceway with SmartPoint technology.",
-    brand: "VTech",
-    category: "Vehicles"
-  },
+
 ];
 
 console.log(toyStoreInventory);
