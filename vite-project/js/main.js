@@ -246,11 +246,10 @@ console.log(toyStoreInventory);
 function createToyCard(toy){
   const toyCard = document.createElement('div');
   toyCard.classList.add('toy-card');
-  toyCard.textContent = toy.name;
+  
+  toyCard.textContent = `${toy.name} ${toy.price} ${toy.ageGroup} ${toy.rating} ${toy.description} ${toy.brand} ${toy.category}`;
   toyApp.appendChild(toyCard);
 }
-
-
 function displaytoys(toys){
   toys.forEach(createToyCard);
 }
