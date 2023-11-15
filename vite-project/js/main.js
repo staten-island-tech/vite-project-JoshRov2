@@ -2,6 +2,9 @@ import '../css/style.css'
 let mode = "light";
 const body = document.querySelector("body");
 const toggleButton = document.getElementById("toggle-mode");
+const priceFilter = document.getElementById("price-filter");
+const ageFilter = document.getElementById("age-filter");
+const ratingFilter = document.getElementById("rating-filter")
 const toyApp = document.getElementById('app');
 const toyStoreInventory = [
   {
@@ -265,3 +268,10 @@ toggleButton.addEventListener('click', () => {
     toggleButton.textContent = "Change to dark mode."
   }
 })
+
+const filteredPrices = toyStoreInventory.filter((toy) => toy.price <= 50.00);
+console.log(filteredPrices);
+
+priceFilter.addEventListener('click', () => {
+  filteredPrices.map((toyStoreInventory) => toyStoreInventory);
+});
