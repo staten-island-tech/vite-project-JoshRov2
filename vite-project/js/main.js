@@ -274,6 +274,7 @@ displaytoys(toyStoreInventory);
 
 toggleButton.addEventListener('click', () => {
   body.classList.toggle("dark");
+  button.classList.toggle("dark");
   if (mode === "light"){
     mode = "dark";
     toggleButton.textContent = "Change to light mode."
@@ -283,15 +284,68 @@ toggleButton.addEventListener('click', () => {
   }
 })
 
+
 const filteredPrices = toyStoreInventory.filter((toy) => toy.price <= 50.00);
 priceFilter.addEventListener('click', () => {
-  filteredPrices.map((toyStoreInventory) => toyStoreInventory);
+  filteredPrices;
 });
 const filteredAges = toyStoreInventory.filter((toy) => toy.ageGroup >= 8);
 ageFilter.addEventListener('click', () => {
-
+  filteredAges;
 });
 const filteredRatings = toyStoreInventory.filter((toy) => toy.rating >= 4.7);
 ratingFilter.addEventListener('click', () => {
-
+  filteredRatings;
+});
+const filteredConstruction = toyStoreInventory.filter((toy) => toy.category === "Construction");
+constructionFilter.addEventListener('click', () => {
+  filteredConstruction;
+})
+const filteredDolls = toyStoreInventory.filter((toy) => toy.category === "Dolls & Accessories");
+dollsFilter.addEventListener('click', () => {
+  filteredDolls;
+});
+const filteredVehicles = toyStoreInventory.filter((toy) => toy.category === "Vehicles");
+vehiclesFilter.addEventListener('click', () => {
+  filteredVehicles;
+});
+const filteredOutdoor = toyStoreInventory.filter((toy) => toy.category === "Outdoor Play");
+outdoorFilter.addEventListener('click', () => {
+  filteredOutdoor;
+});
+const filteredBoard = toyStoreInventory.filter((toy) => toy.category === "Board Games");
+boardFilter.addEventListener('click', () => {
+  filteredBoard;
+});
+const filteredInfant = toyStoreInventory.filter((toy) => toy.category === "Infant Toys");
+infantFilter.addEventListener('click', () => {
+  filteredInfant;
+});
+const filteredAction = toyStoreInventory.filter((toy) => toy.category === "Action Figures");
+actionFilter.addEventListener('click', () => {
+  filteredAction;
+});
+const filteredEducational = toyStoreInventory.filter((toy) => toy.category === "Educational Toys");
+educationalFilter.addEventListener('click', () => {
+  filteredEducational;
+});
+const filteredArts = toyStoreInventory.filter((toy) => toy.category === "Arts & Crafts");
+artsFilter.addEventListener('click', () => {
+  filteredArts;
+});
+const filteredPuzzles = toyStoreInventory.filter((toy) => toy.category === "Puzzles");
+puzzlesFilter.addEventListener('click', () => {
+  filteredPuzzles;
+});
+const filteredPlaysets = toyStoreInventory.filter((toy) => toy.category === "Playsets");
+constructionFilter.addEventListener('click', () => {
+  filteredPlaysets;
+});
+const filteredDressup = toyStoreInventory.filter((toy) => toy.category === "Dress-Up");
+dressupFilter.addEventListener('click', () => {
+  filteredDressup;
+});
+const filteredCollectibles = toyStoreInventory.filter((toy) => toy.category === "Collectibles");
+collectiblesFilter.addEventListener('click', () => {
+  filteredCollectibles;
 });
