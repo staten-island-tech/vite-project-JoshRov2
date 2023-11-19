@@ -18,8 +18,8 @@ const puzzlesFilter = document.getElementById("puzzles")
 const playsetsFilter = document.getElementById("playsets")
 const dressupFilter = document.getElementById("dressup")
 const collectiblesFilter = document.getElementById("collectibles")
-
 const toyApp = document.getElementById('app');
+const toyCards = document.getElementById('card-container');
 const toyStoreInventory = [
   {
     name: "LEGO Classic Brick Set",
@@ -265,9 +265,10 @@ function createToyCard(toy){
   toyCard.classList.add('toy-card');
   
   toyCard.textContent = `${toy.name} ${toy.price} ${toy.ageGroup} ${toy.rating} ${toy.description} ${toy.brand} ${toy.category}`;
-  toyApp.appendChild(toyCard);
+  toyCards.appendChild(toyCard);
 }
 function displaytoys(toys){
+  toyCards.textContent = ``;
   toys.forEach(createToyCard);
 }
 displaytoys(toyStoreInventory);
@@ -283,15 +284,26 @@ toggleButton.addEventListener('click', () => {
     toggleButton.textContent = "Change to dark mode."
   }
 })
+function applyFilter(event, filteredArray){
+const isActive = event.target.dataset.active === "true";
+  if (isActive === true){
+    displaytoys(toyStoreInventory)
+    event.target.dataset.active = "false";
+    event.target.style.backgroundColor = "blue";
+  }else{
+    displaytoys(filteredArray)
+    event.target.dataset.active = "true";
+    event.target.style.backgroundColor = "yellow";
 
-
+  }  
+};
 const filteredPrices = toyStoreInventory.filter((toy) => toy.price <= 50.00);
-priceFilter.addEventListener('click', () => {
-  filteredPrices;
+priceFilter.addEventListener('click', (event) => {
+  applyFilter(event, filteredPrices);
 });
 const filteredAges = toyStoreInventory.filter((toy) => toy.ageGroup >= 8);
-ageFilter.addEventListener('click', () => {
-  filteredAges;
+ageFilter.addEventListener('click', (event) => {
+  applyFilter(event, filteredAges);
 });
 const filteredRatings = toyStoreInventory.filter((toy) => toy.rating >= 4.7);
 ratingFilter.addEventListener('click', () => {

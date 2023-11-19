@@ -6,28 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
   </head>
-  <body>    
-<div id="app">    
-  <button id="toggle-mode">Change to dark mode.</button>
-  <h1 class="header">Josh R's "Bargain" Toy Store</h1> 
-  <button id="price-filter">Browse items under $50.00.</button>
-  <button id="age-filter">Choose the perfect gift for a child over 8 years old. </button>
-  <button id="rating-filter">Pick from our highest rated toys.</button>
-  <h2 class="subheader">Select a category.</h2>
-  <button id="construction">Construction</button>
-  <button id="dolls&accessories">Dolls & Accessories</button>
-  <button id="vehicles">Vehicles</button>
-  <button id="outdoorplay">Outdoor Play</button>
-  <button id="boardgames">Board Games</button>
-  <button id="infanttoys">Infant Toys</button>
-  <button id="actionfigures">Action Figures</button>
-  <button id="educationaltoys">Educational Toys</button>
-  <button id="arts&crafts">Arts & Crafts</button>
-  <button id="puzzles">Puzzles</button>
-  <button id="playsets">Playsets</button>
-  <button id="dressup">Dress Up</button>
-  <button id="collectibles">Collectibles</button>
-</div>
+  <body>
+    <div id="app">
+      <button id="toggle-mode">Change to dark mode.</button>
+    <h1 class="header">Josh R's "Bargain" Toy Store</h1> 
+    <button id="price-filter" data-active="false">Browse items under $50.00.</button>
+    <button id="age-filter" data-active="false">Choose the perfect gift for a child over 8 years old.</button>
+    <button id="rating-filter">Pick from our highest rated toys.</button>
+    <h2 class="subheader">Select a category.</h2>
+    <button id="construction">Construction</button>
+    <button id="dolls&accessories">Dolls & Accessories</button>
+    <button id="vehicles">Vehicles</button>
+    <button id="outdoorplay">Outdoor Play</button>
+    <button id="boardgames">Board Games</button>
+    <button id="infanttoys">Infant Toys</button>
+    <button id="actionfigures">Action Figures</button>
+    <button id="educationaltoys">Educational Toys</button>
+    <button id="arts&crafts">Arts & Crafts</button>
+    <button id="puzzles">Puzzles</button>
+    <button id="playsets">Playsets</button>
+    <button id="dressup">Dress Up</button>
+    <button id="collectibles">Collectibles</button>
+      <div id="card-container"></div>
+    </div>
     <script type="module" src="./js/main.js"></script>
   </body>
 </html>

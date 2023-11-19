@@ -87,7 +87,7 @@ button {
   transition: border-color 0.25s;
 }
 
-button.dark {
+body.dark button {
   background-color: gray;
   color: red;
 }
@@ -95,10 +95,10 @@ button.dark {
 button:hover {
   border-color: #646cff;
 }
-button:focus,
+/* button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
-}
+} */
 
 @media (prefers-color-scheme: light) {
   :root {
