@@ -257,6 +257,22 @@ const toyStoreInventory = [
   },
   
 ];
+function createtoyData(toy) {
+const toyData = `
+<div class="toy-cardcontainer">
+<p>${toy.name}</p>
+<p>${toy.price}<p>
+<p>${toy.ageGroup}<p>
+<p>${toy.rating}<p>
+<p>${toy.description}<p>
+<p>${toy.brand}<p>
+<p>${toy.category}<p>
+<div>`
+toyCards.insertAdjacentHTML('beforeend', toyData);
+}
+
+
+toyStoreInventory.forEach((toy) => createtoyData(toy));
 
 console.log(toyStoreInventory);
 
@@ -289,12 +305,9 @@ const isActive = event.target.dataset.active === "true";
   if (isActive === true){
     displaytoys(toyStoreInventory)
     event.target.dataset.active = "false";
-    event.target.style.backgroundColor = "blue";
   }else{
     displaytoys(filteredArray)
     event.target.dataset.active = "true";
-    event.target.style.backgroundColor = "yellow";
-
   }  
 };
 const filteredPrices = toyStoreInventory.filter((toy) => toy.price <= 50.00);
@@ -306,58 +319,58 @@ ageFilter.addEventListener('click', (event) => {
   applyFilter(event, filteredAges);
 });
 const filteredRatings = toyStoreInventory.filter((toy) => toy.rating >= 4.7);
-ratingFilter.addEventListener('click', () => {
-  filteredRatings;
+ratingFilter.addEventListener('click', (event) => {
+  applyFilter(event, filteredRatings);
 });
 const filteredConstruction = toyStoreInventory.filter((toy) => toy.category === "Construction");
-constructionFilter.addEventListener('click', () => {
-  filteredConstruction;
-})
+constructionFilter.addEventListener('click', (event) => {
+  applyFilter(event, filteredConstruction);
+});
 const filteredDolls = toyStoreInventory.filter((toy) => toy.category === "Dolls & Accessories");
-dollsFilter.addEventListener('click', () => {
-  filteredDolls;
+dollsFilter.addEventListener('click', (event) => {
+  applyFilter(event, filteredDolls);
 });
 const filteredVehicles = toyStoreInventory.filter((toy) => toy.category === "Vehicles");
-vehiclesFilter.addEventListener('click', () => {
-  filteredVehicles;
+vehiclesFilter.addEventListener('click', (event) => {
+  applyFilter(event, filteredVehicles);
 });
 const filteredOutdoor = toyStoreInventory.filter((toy) => toy.category === "Outdoor Play");
-outdoorFilter.addEventListener('click', () => {
-  filteredOutdoor;
+outdoorFilter.addEventListener('click', (event) => {
+  applyFilter(event, filteredOutdoor);
 });
 const filteredBoard = toyStoreInventory.filter((toy) => toy.category === "Board Games");
-boardFilter.addEventListener('click', () => {
-  filteredBoard;
+boardFilter.addEventListener('click', (event) => {
+  applyFilter(event, filteredBoard);
 });
 const filteredInfant = toyStoreInventory.filter((toy) => toy.category === "Infant Toys");
-infantFilter.addEventListener('click', () => {
-  filteredInfant;
+infantFilter.addEventListener('click', (event) => {
+  applyFilter(event, filteredInfant);
 });
 const filteredAction = toyStoreInventory.filter((toy) => toy.category === "Action Figures");
-actionFilter.addEventListener('click', () => {
-  filteredAction;
+actionFilter.addEventListener('click', (event) => {
+  applyFilter(event, filteredAction);
 });
 const filteredEducational = toyStoreInventory.filter((toy) => toy.category === "Educational Toys");
-educationalFilter.addEventListener('click', () => {
-  filteredEducational;
+educationalFilter.addEventListener('click', (event) => {
+  applyFilter(event, filteredEducational);
 });
 const filteredArts = toyStoreInventory.filter((toy) => toy.category === "Arts & Crafts");
-artsFilter.addEventListener('click', () => {
-  filteredArts;
+artsFilter.addEventListener('click', (event) => {
+  applyFilter(event, filteredArts);
 });
 const filteredPuzzles = toyStoreInventory.filter((toy) => toy.category === "Puzzles");
-puzzlesFilter.addEventListener('click', () => {
-  filteredPuzzles;
+puzzlesFilter.addEventListener('click', (event) => {
+  applyFilter(event, filteredPuzzles);
 });
 const filteredPlaysets = toyStoreInventory.filter((toy) => toy.category === "Playsets");
-constructionFilter.addEventListener('click', () => {
-  filteredPlaysets;
+playsetsFilter.addEventListener('click', (event) => {
+applyFilter(event, filteredPlaysets);
 });
 const filteredDressup = toyStoreInventory.filter((toy) => toy.category === "Dress-Up");
-dressupFilter.addEventListener('click', () => {
-  filteredDressup;
+dressupFilter.addEventListener('click', (event) => {
+  applyFilter(event, filteredDressup);
 });
 const filteredCollectibles = toyStoreInventory.filter((toy) => toy.category === "Collectibles");
-collectiblesFilter.addEventListener('click', () => {
-  filteredCollectibles;
+collectiblesFilter.addEventListener('click', (event) => {
+  applyFilter(event, filteredCollectibles);
 });

@@ -95,10 +95,10 @@ body.dark button {
 button:hover {
   border-color: #646cff;
 }
-/* button:focus,
+button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
-} */
+}
 
 @media (prefers-color-scheme: light) {
   :root {
@@ -111,4 +111,15 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+#card-container{
+  display:flex;
+  flex-direction:row;
+  justify-content: center;
+}
+.toy-cardcontainer {
+  display: flex;
+  flex-direction: column;
+  width: 5vh;
+  max-width: 100%;
 }
