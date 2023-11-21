@@ -114,12 +114,18 @@ button:focus-visible {
 }
 #card-container{
   display:flex;
-  flex-direction:row;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
-}
+  border: 3px solid black;
+  max-width: 90%;
+} 
 .toy-cardcontainer {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   width: 5vh;
-  max-width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+  border: 3px solid black;
+  max-width: 90%;
 }

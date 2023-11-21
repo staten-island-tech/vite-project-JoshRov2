@@ -271,7 +271,6 @@ const toyData = `
 toyCards.insertAdjacentHTML('beforeend', toyData);
 }
 
-
 toyStoreInventory.forEach((toy) => createtoyData(toy));
 
 console.log(toyStoreInventory);
@@ -302,7 +301,7 @@ toggleButton.addEventListener('click', () => {
 })
 function applyFilter(event, filteredArray){
 const isActive = event.target.dataset.active === "true";
-  if (isActive === true){
+  if (isActive === true) {
     displaytoys(toyStoreInventory)
     event.target.dataset.active = "false";
   }else{
