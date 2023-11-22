@@ -24,6 +24,7 @@ const toyStoreInventory = [
   {
     name: "LEGO Classic Brick Set",
     price: 29.99,
+    image: "https://i.dailymail.co.uk/i/pix/2017/01/10/12/3C05441600000578-0-image-m-54_1484050523444.jpg",
     ageGroup: 6,
     rating: 4.5,
     description: "A timeless set of colorful building bricks for creative play.",
@@ -262,6 +263,7 @@ const toyData = `
 <div class="toy-cardcontainer">
 <p>${toy.name}</p>
 <p>${toy.price}<p>
+<p>${toy.image}<p>
 <p>${toy.ageGroup}<p>
 <p>${toy.rating}<p>
 <p>${toy.description}<p>
@@ -279,18 +281,17 @@ function createToyCard(toy){
   const toyCard = document.createElement('div');
   toyCard.classList.add('toy-card');
   
-  toyCard.textContent = `${toy.name} ${toy.price} ${toy.ageGroup} ${toy.rating} ${toy.description} ${toy.brand} ${toy.category}`;
+  toyCard.insertAdjacentHTML = `<h2>${toy.name} ${toy.price} ${toy.image} ${toy.ageGroup} ${toy.rating} ${toy.description} ${toy.brand} ${toy.category} </h2>`;
   toyCards.appendChild(toyCard);
 }
 function displaytoys(toys){
-  toyCards.textContent = ``;
+  toyCards.innerHTML = ``;
   toys.forEach(createToyCard);
 }
 displaytoys(toyStoreInventory);
 
 toggleButton.addEventListener('click', () => {
   body.classList.toggle("dark");
-  button.classList.toggle("dark");
   if (mode === "light"){
     mode = "dark";
     toggleButton.textContent = "Change to light mode."
