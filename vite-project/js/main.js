@@ -280,11 +280,11 @@ function createToyCard(toy){
   const toyCard = document.createElement('div');
   toyCard.classList.add('toy-card');
   
-  toyCard.insertAdjacentHTML = `<h2>${toy.name} ${toy.price} ${toy.image} ${toy.ageGroup} ${toy.rating} ${toy.description} ${toy.brand} ${toy.category} </h2>`;
+  toyCard.textContent = `${toy.name} ${toy.price} ${toy.ageGroup} ${toy.rating} ${toy.description} ${toy.brand} ${toy.category}`;
   toyCards.appendChild(toyCard);
 }
 function displaytoys(toys){
-  toyCards.innerHTML = ``;
+  toyCards.textContent = ``;
   toys.forEach(createToyCard);
 }
 displaytoys(toyStoreInventory);
