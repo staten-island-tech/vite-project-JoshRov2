@@ -24,7 +24,6 @@ const toyStoreInventory = [
   {
     name: "LEGO Classic Brick Set",
     price: 29.99,
-    image: "https://i.dailymail.co.uk/i/pix/2017/01/10/12/3C05441600000578-0-image-m-54_1484050523444.jpg",
     ageGroup: 6,
     rating: 4.5,
     description: "A timeless set of colorful building bricks for creative play.",
