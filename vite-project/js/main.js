@@ -24,6 +24,7 @@ const toyStoreInventory = [
   {
     name: "LEGO Classic Brick Set",
     price: 29.99,
+    image: "classicbrick.jpg",
     ageGroup: 6,
     rating: 4.5,
     description: "A timeless set of colorful building bricks for creative play.",
@@ -42,6 +43,7 @@ const toyStoreInventory = [
   {
     name: "Hot Wheels 10-Car Pack",
     price: 9.99,
+    image: "hotwheels10.jpg",
     ageGroup: 3,
     rating: 4.0,
     description: "A collection of 10 iconic Hot Wheels cars for racing and play.",
@@ -257,31 +259,29 @@ const toyStoreInventory = [
   },
   
 ];
-function createtoyData(toy) {
-const toyData = `
-<div class="toy-cardcontainer">
-<p>${toy.name}</p>
-<p>${toy.price}<p>
-<p>${toy.image}<p>
-<p>${toy.ageGroup}<p>
-<p>${toy.rating}<p>
-<p>${toy.description}<p>
-<p>${toy.brand}<p>
-<p>${toy.category}<p>
-<div>`
-toyCards.insertAdjacentHTML('beforeend', toyData);
-}
 
-toyStoreInventory.forEach((toy) => createtoyData(toy));
+// toyStoreInventory.forEach((toy) => createtoyData(toy));
 
 console.log(toyStoreInventory);
 
 function createToyCard(toy){
-  const toyCard = document.createElement('div');
+  const toyData = `
+<div class="toy-card">
+<p>${toy.name}</p>
+<p>$ ${toy.price}</p>
+<p><img src="./images/${toy.image}"/></p>
+<p>${toy.description}</p>
+<p>Age Group: ${toy.ageGroup}+</p>
+<p>Rating: ${toy.rating}</p>
+<p>Brand: ${toy.brand}</p>
+<p>Category: ${toy.category}</p>
+</div>`
+toyCards.insertAdjacentHTML('beforeend', toyData);
+  /* const toyCard = document.createElement('div');
   toyCard.classList.add('toy-card');
   
   toyCard.textContent = `${toy.name} ${toy.price} ${toy.ageGroup} ${toy.rating} ${toy.description} ${toy.brand} ${toy.category}`;
-  toyCards.appendChild(toyCard);
+  toyCards.appendChild(toyCard); */
 }
 function displaytoys(toys){
   toyCards.textContent = ``;
@@ -309,6 +309,17 @@ const isActive = event.target.dataset.active === "true";
     event.target.dataset.active = "true";
   }  
 };
+
+/* function starRating(rating){
+  const starCount = Math.floor(rating);
+  const starsHtml = document.createElement("p");
+  for (let i = 0; i < starCount; i++) {
+    const star = document.createElement("img");
+    star.setAttribute("src", "./images/star.png");
+    starsHtml.appendChild(star);
+  }
+  return starsHtml 
+  }; */
 const filteredPrices = toyStoreInventory.filter((toy) => toy.price <= 50.00);
 priceFilter.addEventListener('click', (event) => {
   applyFilter(event, filteredPrices);
