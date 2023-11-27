@@ -72,7 +72,7 @@ const toyStoreInventory = [
     category: "Board Games"
   },
   {
-    name: "Baby Einstein Take Along Tunes Musical Toy",
+    name: "Baby Einstein Take Along Tunes Musical",
     price: 7.99,
     image: "einstein.jpg",
     ageGroup: 0,
@@ -112,7 +112,7 @@ const toyStoreInventory = [
     category: "Construction"
   },
   {
-    name: "Crayola Inspiration Art Case",
+    name: "Crayola Inspiration Art Case 140-Piece Set",
     price: 19.99,
     image: "crayola.jpg",
     ageGroup: 4,
@@ -132,7 +132,7 @@ const toyStoreInventory = [
     category: "Arts & Crafts"
   },
   {
-    name: "Transformers Bumblebee Action Figure",
+    name: "Transformers Bumblebee Action Figure With Accessories",
     price: 19.99,
     image: "transformers.jpg",
     ageGroup: 6,
@@ -212,7 +212,7 @@ const toyStoreInventory = [
     category: "Playsets"
   },
   {
-    name: "L.O.L. Surprise! O.M.G. Fashion Doll",
+    name: "L.O.L. Surprise! O.M.G. Fashion Doll With Interchangeable Pieces",
     price: 24.99,
     image: "doll.jpg",
     ageGroup: 6,
@@ -232,7 +232,7 @@ const toyStoreInventory = [
     category: "Playsets"
   },
   {
-    name: "Playmobil City Life Hospital Playset",
+    name: "Playmobil City Life Hospital Building Playset",
     price: 44.99,
     image: "hospital.jpg",
     ageGroup: 4,
@@ -252,7 +252,7 @@ const toyStoreInventory = [
     category: "Vehicles"
   },
   {
-    name: "Cabbage Patch Kids Doll",
+    name: "Cabbage Patch Kids Doll With Clothing Accessories",
     price: 29.99,
     image: "cabbage.jpg",
     ageGroup: 3,
@@ -262,7 +262,7 @@ const toyStoreInventory = [
     category: "Dolls & Accessories"
   },
   {
-    name: "NERF Ultra One Motorized Blaster",
+    name: "NERF Ultra One Motorized Blaster With Removable Parts",
     price: 39.99,
     image: "ultra.jpg",
     ageGroup: 8,
@@ -282,7 +282,7 @@ const toyStoreInventory = [
     category: "Collectibles"
   },
   {
-    name: "Scrabble Deluxe Edition",
+    name: "Scrabble Crossword Game Deluxe Edition by Hasbro",
     price: 30.99,    
     image: "scrabble.jpg",
     ageGroup: 8,

@@ -142,14 +142,9 @@ body.dark #card-container{
   max-width: 100%;
 }
 .toy-card img {
-  max-width: 75%;
-  height: auto;
-  max-height: 75%;
+  width: 300px;  
+  height: 300px;
   border: 2px solid black;
-}
-.toy-card text {
-  max-width: 25%;
-  max-height: 25%;
 }
 body.dark .toy-card {
   background-color: wheat;
