@@ -34,6 +34,7 @@ const toyStoreInventory = [
   {
     name: "Barbie Dreamhouse",
     price: 149.99,
+    image: "barbie.jpg",
     ageGroup: 3,
     rating: 4.2,
     description: "A luxurious dollhouse for Barbie and friends with interactive features.",
@@ -73,6 +74,7 @@ const toyStoreInventory = [
   {
     name: "Baby Einstein Take Along Tunes Musical Toy",
     price: 7.99,
+    image: "einstein.jpg",
     ageGroup: 0,
     rating: 4.8,
     description: "An engaging musical toy for infants with colorful lights and melodies.",
@@ -82,6 +84,7 @@ const toyStoreInventory = [
   {
     name: "Paw Patrol Adventure Bay Rescue Playset",
     price: 24.99,
+    image: "paw.jpg",
     ageGroup: 3,
     rating: 4.3,
     description: "A fun playset featuring the Paw Patrol pups and their adventures.",
@@ -91,6 +94,7 @@ const toyStoreInventory = [
   {
     name: "Fisher-Price Laugh & Learn Smart Stages Chair",
     price: 34.99,
+    image: "chair.jpg",
     ageGroup: 3,
     rating: 4.9,
     description: "An interactive chair that introduces learning concepts to toddlers.",
@@ -100,6 +104,7 @@ const toyStoreInventory = [
   {
     name: "LEGO Disney Frozen II Elsa's Jewelry Box Creation",
     price: 39.99,
+    image: "frozen.jpg",
     ageGroup: 6,
     rating: 4.4,
     description: "A LEGO set inspired by Disney's Frozen II for creative building.",
@@ -109,6 +114,7 @@ const toyStoreInventory = [
   {
     name: "Crayola Inspiration Art Case",
     price: 19.99,
+    image: "crayola.jpg",
     ageGroup: 4,
     rating: 4.1,
     description: "A comprehensive art set with various coloring tools and supplies.",
@@ -118,6 +124,7 @@ const toyStoreInventory = [
   {
     name: "Play-Doh Kitchen Creations Ice Cream Set",
     price: 14.99,
+    image: "playdoh.jpg",
     ageGroup: 3,
     rating: 4.0,
     description: "A Play-Doh set for making pretend ice cream treats.",
@@ -127,6 +134,7 @@ const toyStoreInventory = [
   {
     name: "Transformers Bumblebee Action Figure",
     price: 19.99,
+    image: "transformers.jpg",
     ageGroup: 6,
     rating: 4.6,
     description: "A poseable action figure of the beloved Transformers character.",
@@ -136,6 +144,7 @@ const toyStoreInventory = [
   {
     name: "Melissa & Doug Wooden Puzzles Set",
     price: 16.99,
+    image: "woodpuzzle.jpg",
     ageGroup: 2,
     rating: 4.7,
     description: "A set of wooden puzzles for early learning and fine motor skills.",
@@ -145,6 +154,7 @@ const toyStoreInventory = [
   {
     name: "Little Tikes First Slide",
     price: 29.99,
+    image: "slide.jpg",
     ageGroup: 6,
     rating: 4.5,
     description: "A beginner's slide for indoor or outdoor play.",
@@ -154,6 +164,7 @@ const toyStoreInventory = [
   {
     name: "My Little Pony Friendship Castle Playset",
     price: 49.99,
+    image: "pony.jpg",
     ageGroup: 3,
     rating: 4.3,
     description: "A magical castle playset for My Little Pony adventures.",
@@ -163,6 +174,7 @@ const toyStoreInventory = [
   {
     name: "VTech Touch and Teach Word Book",
     price: 19.99,
+    image: "vtech.jpg",
     ageGroup: 3,
     rating: 4.8,
     description: "An interactive book that introduces words, letters, and more.",
@@ -172,6 +184,7 @@ const toyStoreInventory = [
   {
     name: "Magna-Tiles Clear Colors 100-Piece Set",
     price: 119.99,
+    image: "tiles.jpg",
     ageGroup: 3,
     rating: 4.9,
     description: "Magnetic building tiles for open-ended creative play.",
@@ -181,6 +194,7 @@ const toyStoreInventory = [
   {
     name: "Disney Princess Dress Up Trunk",
     price: 29.99,
+    image: "dressup.jpg",
     ageGroup: 3,
     rating: 4.4,
     description: "A dress-up trunk with costumes and accessories for young princesses.",
@@ -190,6 +204,7 @@ const toyStoreInventory = [
   {
     name: "Fisher-Price Little People Caring for Animals Farm",
     price: 34.99,
+    image: "farm.jpg",
     ageGroup: 1,
     rating: 4.6,
     description: "A farm playset with animals and interactive features.",
@@ -199,6 +214,7 @@ const toyStoreInventory = [
   {
     name: "L.O.L. Surprise! O.M.G. Fashion Doll",
     price: 24.99,
+    image: "doll.jpg",
     ageGroup: 6,
     rating: 4.2,
     description: "A stylish fashion doll with surprises and accessories.",
@@ -208,6 +224,7 @@ const toyStoreInventory = [
   {
     name: "KidKraft Waterfall Mountain Train Set and Table",
     price: 129.99,
+    image: "train.jpg",
     ageGroup: 3,
     rating: 4.7,
     description: "A wooden train set and table for imaginative play.",
@@ -217,6 +234,7 @@ const toyStoreInventory = [
   {
     name: "Playmobil City Life Hospital Playset",
     price: 44.99,
+    image: "hospital.jpg",
     ageGroup: 4,
     rating: 4.5,
     description: "A detailed hospital playset with figurines and accessories.",
@@ -226,6 +244,7 @@ const toyStoreInventory = [
   {
     name: "Melissa & Doug Deluxe Wooden Railway Set",
     price: 89.99,
+    image: "railway.jpg",
     ageGroup: 3,
     rating: 4.8,
     description: "A wooden railway set with tracks, trains, and accessories.",
@@ -235,6 +254,7 @@ const toyStoreInventory = [
   {
     name: "Cabbage Patch Kids Doll",
     price: 29.99,
+    image: "cabbage.jpg",
     ageGroup: 3,
     rating: 4.4,
     description: "Adorable Cabbage Patch Kids doll with a unique birth certificate.",
@@ -244,6 +264,7 @@ const toyStoreInventory = [
   {
     name: "NERF Ultra One Motorized Blaster",
     price: 39.99,
+    image: "ultra.jpg",
     ageGroup: 8,
     rating: 4.7,
     description: "A powerful motorized blaster with high-capacity dart drum.",
@@ -253,23 +274,32 @@ const toyStoreInventory = [
   {
     name: "Funko Pop! Star Wars Bobble-Head Figures",
     price: 12.99,
+    image: "funko.jpg",
     ageGroup: 3,
     rating: 4.3,
     description: "Collectible Bobble-Head figures featuring Star Wars characters.",
     brand: "Funko",
     category: "Collectibles"
   },
+  {
+    name: "Scrabble Deluxe Edition",
+    price: 30.99,    
+    image: "scrabble.jpg",
+    ageGroup: 8,
+    rating: 4.9,
+    description: "A strategic word game that tests your vocabulary.",
+    brand: "Hasbro",
+    category: "Board Games"
+  },
 ];
-
-// toyStoreInventory.forEach((toy) => createtoyData(toy));
 
 console.log(toyStoreInventory);
 
 function createToyCard(toy){
   const toyData = `
 <div class="toy-card">
-<h2>${toy.name}</h2>
-<h3>$ ${toy.price}</h3>
+<h3>${toy.name}</h2>
+<h4>$ ${toy.price}</h3>
 <p><img src="./images/${toy.image}"/></p>
 <p>${toy.description}</p>
 <p>Age Group: ${toy.ageGroup}+</p>
@@ -278,11 +308,6 @@ function createToyCard(toy){
 <p>Category: ${toy.category}</p>
 </div>`
 toyCards.insertAdjacentHTML('beforeend', toyData);
-  /* const toyCard = document.createElement('div');
-  toyCard.classList.add('toy-card');
-  
-  toyCard.textContent = `${toy.name} ${toy.price} ${toy.ageGroup} ${toy.rating} ${toy.description} ${toy.brand} ${toy.category}`;
-  toyCards.appendChild(toyCard); */
 }
 function displaytoys(toys){
   toyCards.textContent = ``;
@@ -310,17 +335,6 @@ const isActive = event.target.dataset.active === "true";
     event.target.dataset.active = "true";
   }  
 };
-
-/* function starRating(rating){
-  const starCount = Math.floor(rating);
-  const starsHtml = document.createElement("p");
-  for (let i = 0; i < starCount; i++) {
-    const star = document.createElement("img");
-    star.setAttribute("src", "./images/star.png");
-    starsHtml.appendChild(star);
-  }
-  return starsHtml 
-  }; */
 const filteredPrices = toyStoreInventory.filter((toy) => toy.price <= 50.00);
 priceFilter.addEventListener('click', (event) => {
   applyFilter(event, filteredPrices);
