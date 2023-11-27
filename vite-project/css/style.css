@@ -79,6 +79,7 @@ button {
   padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 500;
+  margin-bottom: 20px;
   font-family: inherit;
   background-color: white;
   color: black;
@@ -88,7 +89,7 @@ button {
 
 body.dark button {
   background-color: gray;
-  color: red;
+  color: rgb(252, 220, 220);
 }
 
 button:hover {
@@ -118,7 +119,7 @@ button:focus-visible {
   margin: 0 auto ;
   justify-content: space-between;
   border: 3px solid black;
-  max-width: 90%;
+  max-width: 100%;
 } 
 .toy-card {
   /* display: flex; */
@@ -131,6 +132,12 @@ button:focus-visible {
   max-width: 100%;
 }
 .toy-card img {
-  max-width: 25%;
-  max-height: 25%;
+  max-width: 75%;
+  max-height: 75%;
+  border: 2px solid black
+}
+
+body.dark .toy-card {
+  background-color: wheat;
+  color: darkred;
 }

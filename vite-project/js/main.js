@@ -53,6 +53,7 @@ const toyStoreInventory = [
   {
     name: "Nerf N-Strike Elite Disruptor Blaster",
     price: 12.99,
+    image: "nerf.jpg",
     ageGroup: 8,
     rating: 4.7,
     description: "A quick-draw blaster for action-packed Nerf battles.",
@@ -62,6 +63,7 @@ const toyStoreInventory = [
   {
     name: "Monopoly Board Game",
     price: 19.99,
+    image: "monopoly.jpg",
     ageGroup: 8,
     rating: 4.6,
     description: "The classic board game of buying, selling, and trading properties.",
@@ -257,7 +259,6 @@ const toyStoreInventory = [
     brand: "Funko",
     category: "Collectibles"
   },
-  
 ];
 
 // toyStoreInventory.forEach((toy) => createtoyData(toy));
@@ -267,8 +268,8 @@ console.log(toyStoreInventory);
 function createToyCard(toy){
   const toyData = `
 <div class="toy-card">
-<p>${toy.name}</p>
-<p>$ ${toy.price}</p>
+<h2>${toy.name}</h2>
+<h3>$ ${toy.price}</h3>
 <p><img src="./images/${toy.image}"/></p>
 <p>${toy.description}</p>
 <p>Age Group: ${toy.ageGroup}+</p>
