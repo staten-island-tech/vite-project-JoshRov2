@@ -18,6 +18,7 @@ const puzzlesFilter = document.getElementById("puzzles")
 const playsetsFilter = document.getElementById("playsets")
 const dressupFilter = document.getElementById("dressup")
 const collectiblesFilter = document.getElementById("collectibles")
+const descriptionButton = document.getElementById("description-cards")
 const toyApp = document.getElementById('app');
 const toyCards = document.getElementById('card-container');
 const toyStoreInventory = [
@@ -336,6 +337,18 @@ const isActive = event.target.dataset.active === "true";
   }  
 };
 
+
+/* const carddescriptions = toyStoreInventory.map((toy) => ({
+  name: toy.name,
+  image: toy.image,
+  description: toy.description,
+}));
+descriptionButton.addEventListener('click', () => {
+  toyCards.textContent = " "
+  toyCards.insertAdjacentHTML('beforeend', carddescriptions)
+  displaytoys(carddescriptions);
+})
+ */
 /* let buttons = document.querySelectorAll("category-filter")
 buttons.forEach((btn) => btn.addEventListener("click",
 function(btn){
