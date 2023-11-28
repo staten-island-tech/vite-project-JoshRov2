@@ -335,6 +335,14 @@ const isActive = event.target.dataset.active === "true";
     event.target.dataset.active = "true";
   }  
 };
+
+/* let buttons = document.querySelectorAll(".")
+buttons.forEach((btn) => btn.addEventListener("click",
+function(){
+  let filter = btn.textContent
+}))
+toyStoreInventory.filter((toy) => toy.category.includes(filter)).forEach((toy)=>createToyCard(toy)); */
+
 const filteredPrices = toyStoreInventory.filter((toy) => toy.price <= 50.00);
 priceFilter.addEventListener('click', (event) => {
   applyFilter(event, filteredPrices);
