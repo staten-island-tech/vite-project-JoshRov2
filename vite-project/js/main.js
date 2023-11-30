@@ -84,19 +84,19 @@ toyCards.insertAdjacentHTML('beforeend', carddescriptions);
 }
 descriptionButton.addEventListener('click', function() {
 displaydescs(descriptionCards);
-body.classList.toggle(descriptionCards);
-  if {
-    
-  }else{
-    
-  }
+
 });
 
 function displaydescs(toys){
   toyCards.textContent = ``;
   toys.forEach(createDescs);
 }
-
+/* body.classList.toggle(descriptionCards);
+  if {
+    
+  }else{
+    
+  } */
 /* let buttons = document.querySelectorAll("category-filter")
 buttons.forEach((btn) => btn.addEventListener("click",
 function(btn){
