@@ -84,6 +84,12 @@ toyCards.insertAdjacentHTML('beforeend', carddescriptions);
 }
 descriptionButton.addEventListener('click', function() {
 displaydescs(descriptionCards);
+body.classList.toggle(descriptionCards);
+  if {
+    
+  }else{
+    
+  }
 });
 
 function displaydescs(toys){
