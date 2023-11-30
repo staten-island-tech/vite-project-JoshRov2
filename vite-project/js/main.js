@@ -59,9 +59,11 @@ function applyFilter(event, filteredArray){
 const isActive = event.target.dataset.active === "true";
   if (isActive === true) {
     displaytoys(toyStoreInventory)
+    displaydescs(descriptionCards)
     event.target.dataset.active = "false";
   }else{
     displaytoys(filteredArray)
+    displaydescs(filteredArray)
     event.target.dataset.active = "true";
   }  
 };
