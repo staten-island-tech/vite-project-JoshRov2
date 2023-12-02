@@ -5,21 +5,7 @@ const toggleButton = document.getElementById("toggle-mode");
 const priceFilter = document.getElementById("price-filter");
 const ageFilter = document.getElementById("age-filter");
 const ratingFilter = document.getElementById("rating-filter");
-const constructionFilter = document.getElementById("construction")
-const dollsFilter = document.getElementById("dolls&accessories")
-const vehiclesFilter = document.getElementById("vehicles")
-const outdoorFilter = document.getElementById("outdoorplay")
-const boardFilter = document.getElementById("boardgames")
-const infantFilter = document.getElementById("infanttoys")
-const actionFilter = document.getElementById("actionfigures")
-const educationalFilter = document.getElementById("educationaltoys")
-const artsFilter = document.getElementById("arts&crafts")
-const puzzlesFilter = document.getElementById("puzzles")
-const playsetsFilter = document.getElementById("playsets")
-const dressupFilter = document.getElementById("dressup")
-const collectiblesFilter = document.getElementById("collectibles")
 const descriptionButton = document.getElementById("description-cards")
-const toyApp = document.getElementById('app');
 const toyCards = document.getElementById('card-container');
 
 import { toyStoreInventory } from './toys';
@@ -59,11 +45,9 @@ function applyFilter(event, filteredArray){
 const isActive = event.target.dataset.active === "true";
   if (isActive === true) {
     displaytoys(toyStoreInventory)
-    displaydescs(descriptionCards)
     event.target.dataset.active = "false";
   }else{
     displaytoys(filteredArray)
-    displaydescs(filteredArray)
     event.target.dataset.active = "true";
   }  
 };
@@ -73,7 +57,6 @@ const descriptionCards = toyStoreInventory.map((toy) => ({
   image: toy.image,
   description: toy.description,
 }));
-
 function createDescs(toy){
 const carddescriptions = `<div class="toy-card">
 <h3>${toy.name}</h3>
@@ -86,25 +69,36 @@ descriptionButton.addEventListener('click', function() {
 displaydescs(descriptionCards);
 
 });
-
 function displaydescs(toys){
   toyCards.textContent = ``;
   toys.forEach(createDescs);
 }
-/* body.classList.toggle(descriptionCards);
-  if {
-    
+
+let pageSimplification = false;
+descriptionButton.addEventListener('click', function () {
+  if (pageSimplification) {
+    pageSimplification = false;
+    displaytoys(toyStoreInventory);
+    descriptionButton.textContent = "Simplify the page."
   }else{
-    
-  } */
-/* let buttons = document.querySelectorAll("category-filter")
-buttons.forEach((btn) => btn.addEventListener("click",
-function(btn){
-  let filt = btn.textContent
-toyStoreInventory.filter((toy) => toy.category.includes(filt))
-.forEach((toy)=>applyFilter(filt));
-}));
- */
+    pageSimplification = true;
+    displaydescs(descriptionCards);
+    descriptionButton.textContent = "Show all information."
+  }
+  
+});
+
+
+
+let categoryButtons = document.querySelectorAll('.category-filter');
+categoryButtons.forEach((btn) => {
+  btn.addEventListener('click', (event) => {
+    const category = event.target.textContent;
+    const filteredToys = toyStoreInventory.filter((toy) => toy.category === category)
+    applyFilter(event, filteredToys)
+  });
+});
+
 const filteredPrices = toyStoreInventory.filter((toy) => toy.price <= 50.00);
 priceFilter.addEventListener('click', (event) => {
   applyFilter(event, filteredPrices);
@@ -117,7 +111,7 @@ const filteredRatings = toyStoreInventory.filter((toy) => toy.rating >= 4.7);
 ratingFilter.addEventListener('click', (event) => {
   applyFilter(event, filteredRatings);
 });
-const filteredConstruction = toyStoreInventory.filter((toy) => toy.category === "Construction");
+/* const filteredConstruction = toyStoreInventory.filter((toy) => toy.category === "Construction");
 constructionFilter.addEventListener('click', (event) => {
   applyFilter(event, filteredConstruction);
 });
@@ -169,3 +163,4 @@ const filteredCollectibles = toyStoreInventory.filter((toy) => toy.category === 
 collectiblesFilter.addEventListener('click', (event) => {
   applyFilter(event, filteredCollectibles);
 });
+ */
