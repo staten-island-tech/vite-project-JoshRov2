@@ -16,7 +16,7 @@ function createToyCard(toy){
 <div class="toy-card">
 <h3>${toy.name}</h3>
 <h4>$ ${toy.price}</h>
-<p><img src="./images/${toy.image}"/></p>
+<p><img src="./public/images/${toy.image}"/></p>
 <p>${toy.description}</p>
 <p>Age Group: ${toy.ageGroup}+</p>
 <p>Rating: ${toy.rating}</p>
@@ -60,7 +60,7 @@ const descriptionCards = toyStoreInventory.map((toy) => ({
 function createDescs(toy){
 const carddescriptions = `<div class="toy-card">
 <h3>${toy.name}</h3>
-<p><img src="./images/${toy.image}"/></p>
+<p><img src="./public/images/${toy.image}"/></p>
 <p>${toy.description}</p>
 </div>`
 toyCards.insertAdjacentHTML('beforeend', carddescriptions);
@@ -87,9 +87,6 @@ descriptionButton.addEventListener('click', function () {
   }
   
 });
-
-
-
 let categoryButtons = document.querySelectorAll('.category-filter');
 categoryButtons.forEach((btn) => {
   btn.addEventListener('click', (event) => {
